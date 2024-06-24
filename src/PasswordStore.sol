@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.18;
+pragma solidity 0.8.18; // @qn is this correct version of Solidity
 
 /*
  * @author not-so-secure-dev
@@ -10,8 +10,9 @@ pragma solidity 0.8.18;
 contract PasswordStore {
     error PasswordStore__NotOwner();
 
-    address private s_owner;
-    string private s_password;
+    // @audit all onchain variables are visible no matter their visibility in Solidity
+    address private s_owner;    // @info storage slot 0
+    string private s_password;  // @info storage slot 1
 
     event SetNetPassword();
 
@@ -23,6 +24,7 @@ contract PasswordStore {
      * @notice This function allows only the owner to set a new password.
      * @param newPassword The new password to set.
      */
+    // @audit missing access control: anyone can set a new password
     function setPassword(string memory newPassword) external {
         s_password = newPassword;
         emit SetNetPassword();
@@ -32,6 +34,8 @@ contract PasswordStore {
      * @notice This allows only the owner to retrieve the password.
      * @param newPassword The new password to set.
      */
+    // @audit natspec-code mismatch: function does not accept input parameter `newPassword` 
+    //  as described in the natspec
     function getPassword() external view returns (string memory) {
         if (msg.sender != s_owner) {
             revert PasswordStore__NotOwner();
