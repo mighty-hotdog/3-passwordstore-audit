@@ -1,19 +1,12 @@
 
 # PasswordStore
 
-<br/>
-<p align="center">
-<img src="./password-store-logo.png" width="400" alt="password-store">
-</p>
-<br/>
-
-A smart contract applicatoin for storing a password. Users should be able to store a password and then retrieve it later. Others should not be able to access the password. 
+This is my 1st learning audit conducted on a mock smart contract application `Password Store`. This app allows a user to store a private password and retrieve it later. The user may also set a new password. The password is protected from access by other users who are not able to access it.
 
 - [PasswordStore](#passwordstore)
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Quickstart](#quickstart)
-    - [Optional Gitpod](#optional-gitpod)
 - [Usage](#usage)
   - [Deploy (local)](#deploy-local)
   - [Testing](#testing)
@@ -32,17 +25,9 @@ A smart contract applicatoin for storing a password. Users should be able to sto
 
 ## Quickstart
 
-```
-git clone https://github.com/Cyfrin/3-passwordstore-audit
-cd 3-passwordstore-audit
-forge build
-```
+This is my 1st learning code audit. On a mock app. 
 
-### Optional Gitpod
-
-If you can't or don't want to run and install locally, you can work with this repo in Gitpod. If you do this, you can skip the `clone this repo` part.
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/Cyfrin/3-passwordstore-audit)
+You don't want to clone this.
 
 # Usage
 
@@ -93,9 +78,9 @@ forge coverage --report debug
 
 ## Create the audit report
 
-View the [audit-report-templating](https://github.com/Cyfrin/audit-report-templating) repo to install all dependencies. 
+View the [audit-report-templating](https://github.com/Cyfrin/audit-report-templating) repo for details on how to generate the audit report.
 
 ```bash
-cd audits
-pandoc 2023-09-01-password-store-report.md -o report.pdf --from markdown --template=eisvogel --listings
+cd report-cooking
+pandoc report-work-in-progress.md -o 'Protocol Review Report.pdf' --from markdown --template=eisvogel --listings
 ```
