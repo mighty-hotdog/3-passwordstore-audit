@@ -6,6 +6,7 @@ This is my 1st learning audit conducted on a mock smart contract application `Pa
 - [PasswordStore](#passwordstore)
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
+  - [Git](#git)
   - [Quickstart](#quickstart)
 - [Usage](#usage)
   - [Deploy (local)](#deploy-local)
@@ -22,6 +23,12 @@ This is my 1st learning audit conducted on a mock smart contract application `Pa
   - You'll know you did it right if you can run `git --version` and you see a response like `git version x.x.x`
 - [foundry](https://getfoundry.sh/)
   - You'll know you did it right if you can run `forge --version` and you see a response like `forge 0.2.0 (816e00b 2023-03-16T00:05:26.396218Z)`
+
+## Git
+
+There are 2 branches. The `main` branch contains the onboarded client material. The `audit` branch contains the audit stuff and final report.
+
+The libraries listed in this repo are irrelevant. They are not needed in the codebase.
 
 ## Quickstart
 
