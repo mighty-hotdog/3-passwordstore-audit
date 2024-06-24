@@ -3,7 +3,12 @@
 
 This is my 1st learning audit conducted on a mock smart contract application `Password Store`. This app allows a user to store a private password and retrieve it later. The user may also set a new password. The password is protected from access by other users who are not able to access it.
 
+# Final Audit Report
+
+The final audit report [20240624 PasswordStoreApp Code Review Report](https://github.com/mighty-hotdog/3-passwordstore-audit/tree/audit) is located in the `audit-data` folder.
+
 - [PasswordStore](#passwordstore)
+- [Final Audit Report](#final-audit-report)
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Git](#git)
