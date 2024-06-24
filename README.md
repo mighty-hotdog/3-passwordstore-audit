@@ -1,14 +1,8 @@
 
-# PasswordStore
-
-This is my 1st learning audit conducted on a mock smart contract application `Password Store`. This app allows a user to store a private password and retrieve it later. The user may also set a new password. The password is protected from access by other users who are not able to access it.
-
-# Final Audit Report
-
-The final audit report [20240624 PasswordStoreApp Code Review Report](https://github.com/mighty-hotdog/3-passwordstore-audit/blob/audit/audit-data/20240624%20PasswordStoreApp%20Code%20Review%20Report.pdf) is located in the `audit-data` folder.
-
 - [PasswordStore](#passwordstore)
 - [Final Audit Report](#final-audit-report)
+- [Audit Scope Details](#audit-scope-details)
+  - [Generating the audit report](#generating-the-audit-report)
 - [Getting Started](#getting-started)
   - [Requirements](#requirements)
   - [Git](#git)
@@ -17,8 +11,34 @@ The final audit report [20240624 PasswordStoreApp Code Review Report](https://gi
   - [Deploy (local)](#deploy-local)
   - [Testing](#testing)
     - [Test Coverage](#test-coverage)
-- [Audit Scope Details](#audit-scope-details)
-  - [Create the audit report](#create-the-audit-report)
+
+# PasswordStore
+
+This is my 1st learning audit conducted on a mock smart contract application `Password Store`. This app allows a user to store a private password and retrieve it later. The user may also set a new password. The password is protected from access by other users who are not able to access it.
+
+# Final Audit Report
+
+The final audit report [20240624 PasswordStoreApp Code Review Report](https://github.com/mighty-hotdog/3-passwordstore-audit/blob/audit/audit-data/20240624%20PasswordStoreApp%20Code%20Review%20Report.pdf) is located in the `audit-data` folder.
+
+# Audit Scope Details
+
+- Commit Hash:  2e8f81e263b3a9d18fab4fb5c46805ffc10a9990
+- In Scope:
+```
+./src/
+└── PasswordStore.sol
+```
+- Solc Version: 0.8.18
+- Chain(s) to deploy contract to: Ethereum
+
+## Generating the audit report
+
+View the [audit-report-templating](https://github.com/Cyfrin/audit-report-templating) repo for details on how to generate the audit report.
+
+```bash
+cd report-cooking
+pandoc report-work-in-progress.md -o '20240624 PasswordStoreApp Code Review Report.pdf' --from markdown --template=eisvogel --listings
+```
 
 # Getting Started
 
@@ -75,24 +95,4 @@ and for coverage based testing:
 
 ```
 forge coverage --report debug
-```
-
-# Audit Scope Details
-
-- Commit Hash:  2e8f81e263b3a9d18fab4fb5c46805ffc10a9990
-- In Scope:
-```
-./src/
-└── PasswordStore.sol
-```
-- Solc Version: 0.8.18
-- Chain(s) to deploy contract to: Ethereum
-
-## Create the audit report
-
-View the [audit-report-templating](https://github.com/Cyfrin/audit-report-templating) repo for details on how to generate the audit report.
-
-```bash
-cd report-cooking
-pandoc report-work-in-progress.md -o 'Protocol Review Report.pdf' --from markdown --template=eisvogel --listings
 ```
