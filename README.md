@@ -5,7 +5,7 @@ This is my 1st learning audit conducted on a mock smart contract application `Pa
 
 # Final Audit Report
 
-The final audit report [20240624 PasswordStoreApp Code Review Report](https://github.com/mighty-hotdog/3-passwordstore-audit/tree/audit) is located in the `audit-data` folder.
+The final audit report [20240624 PasswordStoreApp Code Review Report](https://github.com/mighty-hotdog/3-passwordstore-audit/blob/audit/audit-data/20240624%20PasswordStoreApp%20Code%20Review%20Report.pdf) is located in the `audit-data` folder.
 
 - [PasswordStore](#passwordstore)
 - [Final Audit Report](#final-audit-report)
